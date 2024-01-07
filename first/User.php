@@ -1,22 +1,38 @@
 <?php 
-// echo$_POST["x"] + $_POST["y"];
-if($_POST["op"]== "+"){
+// if($_POST["op"]== "+"){
 
-echo $_POST["x"] + $_POST["y"];
+// echo $_POST["x"] + $_POST["y"];
 
-}elseif ($_POST["op"] == "-") {
+// }elseif ($_POST["op"] == "-") {
 
-  echo $_POST["x"] - $_POST["y"];
+//   echo $_POST["x"] - $_POST["y"];
   
-}elseif ($_POST["op"]== "*") {
+// }elseif ($_POST["op"]== "*") {
 
-  echo $_POST["x"] * $_POST["y"];
+//   echo $_POST["x"] * $_POST["y"];
   
-}elseif ($_POST["op"]== "/") {
+// }elseif ($_POST["op"]== "/") {
 
-  echo $_POST["x"] / $_POST["y"];
+//   echo $_POST["x"] / $_POST["y"];
   
-}else {
+// }else {
 
-  echo "Error en la operación";
+//   echo "Error en la operación";
+// }
+
+switch($_POST["op"]) {
+  case "+":
+    echo $_POST["x"] + $_POST["y"];
+  break;
+  case "-":
+    echo $_POST["x"] - $_POST["y"];
+  break;
+  case "*":
+    echo $_POST["x"] * $_POST["y"];
+  break;
+  case "/":
+    echo $_POST["x"] / $_POST["y"];
+  break;
+  default:
+  echo "please choose an operation";
 }

@@ -1,5 +1,4 @@
 <?php
-
 // Send Data To Server
 rmdir("foo1");
 echo file_exists("file.txt");
@@ -10,7 +9,6 @@ echo filesize("file.txt");
 
 }
 $file=fopen("file.txt","r");
-
 var_dump($file);
 
 while($line=fgets($file)!=false ) {
